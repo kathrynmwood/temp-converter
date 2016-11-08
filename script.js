@@ -40,17 +40,19 @@ var kelvinToCelsius = function () {
 
 // end of temperature conversion functions
 
-// if...else conditional
+// Convert string from prompt to integer
+tempType = parseInt(tempType);
 
-if (tempType == 1) {
+// if...else conditional
+if (tempType === 1) {
   console.log("Fahrenheit =" + temperature);
   console.log("Celsius =" + fahrenheitToCelsius(temperature));
   console.log("Kelvin =" + fahrenheitToKelvin(temperature));
-} else if (tempType == 2) {
+} else if (tempType === 2) {
   console.log("Celsius =" + temperature);
   console.log("Fahrenheit =" + celsiusToFahrenheit(temperature));
   console.log("Kelvin =" + celsiusToKelvin(temperature));
-} else if (tempType == 3) {
+} else if (tempType === 3) {
   console.log("Kelvin =" + temperature);
   console.log("Fahrenheit =" + kelvinToFahrenheit(temperature));
   console.log("Celsius =" + kelvinToCelsius(temperature));
